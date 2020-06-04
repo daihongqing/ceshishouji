@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #eff3fb;
+}
+.video-js .vjs-time-control {
+  display: block;
+}
+.video-js .vjs-remaining-time {
+  display: none;
+}
+#playPhoneBox {
+  font-size: 14px;
+}
+#playPhoneBox header {
+  width: 100%;
+  background-color: #fff;
+}
+#playPhoneBox header #myVideo {
+  width: 100%;
+  height: 2rem;
+}
+#playPhoneBox header .des {
+  width: 100%;
+  padding: 1.5vh 3vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c2d0ee;
+}
+#playPhoneBox header .des .left,
+#playPhoneBox header .des .right {
+  color: #23468C;
+}
+#playPhoneBox header .des .left span,
+#playPhoneBox header .des .right span {
+  float: right;
+  display: block;
+  font-weight: 800;
+  color: #4981FD;
+  font-size: 0.35rem;
+}
+#playPhoneBox header .timeBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3vh 4vw;
+}
+#playPhoneBox header .timeBox .flip-clock-wrapper {
+  width: initial;
+}
+#playPhoneBox header .timeBox .flip-clock-wrapper ul {
+  margin: 0.02rem;
+}
+#playPhoneBox header .timeBox .flip-clock-wrapper .flip-clock-divider {
+  line-height: initial;
+  height: 36px;
+  width: 15px;
+}
+#playPhoneBox header .timeBox .flip-clock-wrapper .flip-clock-divider .flip-clock-dot {
+  width: 5px;
+  height: 5px;
+  background-color: #4981FD;
+}
+#playPhoneBox header .timeBox .flip-clock-wrapper .flip-clock-divider .bottom {
+  bottom: 21px;
+}
+#playPhoneBox header .timeBox .flip-clock-wrapper .flip-clock-divider .top {
+  top: 23px;
+}
+#playPhoneBox header .timeBox .flip-clock-wrapper ul li a div div.inn {
+  background-color: #DFE6F5;
+  color: #4981FD;
+}
+#playPhoneBox header .timeBox > span {
+  font-size: 0.32rem;
+  font-weight: 500;
+  color: #23468c;
+}
+#playPhoneBox main {
+  margin-top: 6px;
+  width: 100%;
+  background-color: #fff;
+}
+#playPhoneBox main .tab {
+  display: flex;
+  width: 100%;
+  height: 6vh;
+}
+#playPhoneBox main .tab span {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #23468C;
+}
+#playPhoneBox main .tab .current {
+  color: #23468C;
+  border-bottom: 2px solid #3366CC;
+}
+#playPhoneBox main .currentBox {
+  width: 100%;
+}
+#playPhoneBox main .currentBox .show {
+  display: block !important;
+}
+#playPhoneBox main .currentBox .desction {
+  width: 100%;
+  display: none;
+  padding: 2vh 5vw;
+  box-sizing: border-box;
+}
+#playPhoneBox main .currentBox .desction .user {
+  display: flex;
+}
+#playPhoneBox main .currentBox .desction .user img {
+  width: 15vw;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 3vw;
+}
+#playPhoneBox main .currentBox .desction .user > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#playPhoneBox main .currentBox .desction .user > div span:nth-child(2) {
+  color: #ccc;
+}
+#playPhoneBox main .currentBox .desction .text h3 {
+  font-weight: 450;
+  font-size: 0.32rem;
+  color: #23468C;
+  margin: 1vh 0;
+}
+#playPhoneBox main .currentBox .desction .text p {
+  color: #23468C;
+  line-height: 0.52rem;
+}
+#playPhoneBox main .currentBox .desction1 {
+  padding: 0;
+}
+#playPhoneBox main .currentBox .navBox {
+  width: 100%;
+}
+#playPhoneBox main .currentBox .navBox .ui-corner-bottom {
+  border-bottom: 1px solid #c2d0ee;
+}
+#playPhoneBox main .currentBox .navBox .firstTilte {
+  color: #23468C;
+  font-size: 0.3rem;
+  height: 6vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-left: 4vw;
+  padding-right: 7vw;
+  align-items: center;
+  border-bottom: 1px solid #c2d0ee;
+}
+#playPhoneBox main .currentBox .navBox .nowPlay .icon-zhengzaibofang {
+  display: block !important;
+}
+#playPhoneBox main .currentBox .navBox .icon-zhengzaibofang {
+  float: right;
+  display: none;
+  margin-left: 19vw;
+}
+#playPhoneBox main .currentBox .navBox #second .secondTilte,
+#playPhoneBox main .currentBox .navBox #third .secondTilte {
+  padding-left: 7vw;
+  padding-right: 7vw;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 6vh;
+  justify-content: space-between;
+  border-bottom: 1px solid #c2d0ee;
+  color: #23468c;
+  font-weight: 400;
+}
+#playPhoneBox main .currentBox .navBox #second li,
+#playPhoneBox main .currentBox .navBox #third li {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  height: 30px;
+  padding-left: 45px;
+  box-sizing: border-box;
+}
+#playPhoneBox main .currentBox .navBox #second li i,
+#playPhoneBox main .currentBox .navBox #third li i {
+  margin-right: 10px;
+  color: #335a96;
+}
+#playPhoneBox main .currentBox .navBox #second li span,
+#playPhoneBox main .currentBox .navBox #third li span {
+  color: #335a96;
+}

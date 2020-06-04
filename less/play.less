@@ -1,0 +1,161 @@
+ html,
+ body {
+   width: 100vw;
+   list-style: none;
+ }
+
+ .video-js .vjs-time-control {
+   display: block;
+ }
+
+ .video-js .vjs-remaining-time {
+   display: none;
+ }
+
+ * {
+   margin: 0;
+   padding: 0;
+   font-size: 12px;
+   &::-webkit-scrollbar {
+     width: 4px;
+     height: 4px;
+     background: white;
+   }
+   &::-webkit-scrollbar-corner,
+   /* 滚动条角落 */
+   &::-webkit-scrollbar-thumb,
+   &::-webkit-scrollbar-track {
+     border-radius: 1px;
+   }
+   &::-webkit-scrollbar-corner,
+   &::-webkit-scrollbar-track {
+     /* 滚动条轨道 */
+     background-color: #DFE6F5;
+     box-shadow: none;
+   }
+   &::-webkit-scrollbar-thumb {
+     /* 滚动条手柄 */
+     background-color: #3366CC;
+   }
+ }
+
+ #playBox {
+   width: 100%;
+   height: 100vh;
+   header {
+     width: 100%;
+     height: 50px;
+     padding: 0 20px;
+     box-sizing: border-box;
+     background: rgba(19, 38, 77, 1);
+     box-shadow: 0px 1px 0px 0px rgba(6, 9, 32, 0.5);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     h1 {
+       color: #fff;
+       font-weight: 400;
+       font-size: 16px;
+     }
+     .back {
+       cursor: pointer;
+       color: #fff;
+       i {
+         font-size: 12px;
+       }
+     }
+   }
+   main {
+     width: 100%;
+     height: calc(100% - 50px);
+     display: flex;
+     padding: 0 10px;
+     box-sizing: border-box;
+     .nav {
+       justify-content: center;
+       padding: 15px 5px;
+       box-sizing: border-box;
+       width: 300px;
+       overflow-y: auto;
+       h2 {
+         width: 100%;
+         height: 50px;
+         display: flex;
+         font-size: 20px;
+         color: #23468C;
+         justify-content: center;
+         align-items: center;
+         border-bottom: 1px solid #C2D0EE;
+         margin-bottom: 5px;
+       }
+       .navBox {
+         .ui-accordion-content {
+           border: 1px solid rgba(194, 208, 238, 1);
+         }
+         .firstTilte {
+           color: #23468C;
+           font-size: 15px;
+           height: 40px;
+           background: rgba(223, 230, 245, 1);
+         }
+         #second,
+         #third {
+           .secondTilte {
+             padding-left: 20px;
+             box-sizing: border-box;
+             color: rgba(35, 70, 140, 1);
+             font-weight: 400;
+           }
+           li {
+             display: flex;
+             cursor: pointer;
+             align-items: center;
+             height: 30px;
+             padding-left: 45px;
+             box-sizing: border-box;
+             i {
+               margin-right: 10px;
+               color: rgba(51, 90, 150, 1)
+             }
+             span {
+               color: rgba(51, 90, 150, 1)
+             }
+           }
+         }
+       }
+       h3 {
+         height: 35px;
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         font-size: 14px;
+         border: 1px solid rgba(194, 208, 238, 1);
+         border-radius: 4px 4px 0px 0px;
+         span {
+           margin-left: 5px;
+           margin-right: 5px;
+         }
+       }
+     }
+   }
+   .video {
+     width: calc(100% - 300px);
+     height: 100%;
+     background-color: chocolate;
+     h1 {
+       display: flex;
+       box-sizing: border-box;
+       align-items: center;
+       padding: 0 15px;
+       width: 100%;
+       font-weight: 400;
+       height: 50px;
+       color: #fff;
+       background-color: rgba(43, 192, 217, 1);
+     }
+     #myVideo {
+       width: 100%;
+       height: calc(100% - 50px);
+     }
+   }
+ }

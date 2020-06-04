@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./imges/logo.ico">
+  <!-- <link rel="stylesheet" href="./css/reset.min.css"> -->
+  <link href="./css/video-js.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/flipclock.css">
+  <link rel="stylesheet" href="./css/classPhone.css">
+  <title>创践-大学生创新创业实务</title>
+</head>
+<script>
+  let w = document.documentElement.clientWidth || document.body.clientWidth;
+  document.documentElement.style.fontSize = w * 100 / 750 + 'px';
+  window.onresize = function () {
+    let w = document.documentElement.clientWidth || document.body.clientWidth;
+    document.documentElement.style.fontSize = w * 100 / 750 + 'px';
+  }
+</script>
+
+<body>
+  <div id="playPhoneBox">
+    <header>
+      <video id="myVideo" class="video-js vjs-big-play-centered vjs-fluid">
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank">
+            supports HTML5 video
+          </a>
+        </p>
+      </video>
+      <div class="des">
+        <div class="left">
+          <p>课程学时：32</p>
+          <p>课程来源：中国海洋大学</p>
+        </div>
+        <div class="right">
+          <p>课程学习进度：</p> <span>31%</span>
+        </div>
+      </div>
+      <div class="timeBox">
+        <span>
+          累计学习时长：
+        </span>
+        <div class="your-clock"></div>
+      </div>
+    </header>
+    <main>
+      <div class="tab">
+        <span class="current">课程介绍</span>
+        <span>课程目录</span>
+      </div>
+      <div class="currentBox">
+        <div class="desction  show">
+          <div class="user">
+            <img src="./imges/QQ图片20200603144307.jpg" alt="">
+            <div>
+              <span>猪猪猪</span>
+              <span>暂无介绍</span>
+            </div>
+          </div>
+          <div class="text">
+            <h3>课程介绍</h3>
+            <p>
+              &nbsp;&nbsp;创践由中国海洋大学牵头，南开大学、四川大学、厦门大学共同制作，海尔集团、泰有投资、创游记参与建设，线上线下协同发力，面向全体大学生普及创新创业基础知识，学会用创业精神经营自己的事业和人生。2015年12月获评山东省高校网络思想政治教育优秀成果二等奖。2016-2017年为全国300余所高校，累计十余万大学生提供课程服务，点击量超过400万次，在创新创业类慕课中选课高校量排名全国第一，学生满意度达95.3%，入选山东省大学生思想政治教育优秀工作案例。内蒙古、海南省教育厅邀请介绍慕课经验，实施效果得到新华社、《光明日报》、《参考消息》等媒体的报道，并在国务院客户端进行推广。2017年6月，刘延东副总理视察学生创新创业成果，学校设立专门展区介绍《创践》慕课。
+            </p>
+          </div>
+        </div>
+        <div class="desction desction1 ">
+
+          <div class="navBox">
+            <div id="first">
+              <h3 class="firstTilte">第一章创业是什么</h3>
+              <div style="height: auto;">
+                <div id="second">
+                  <h3 class="secondTilte">第一课</h3>
+                  <div style="height: auto;" class="nowPlay">
+                    <li><i class="icon-bofang iconfont"></i> <span>
+                        案例：硅谷百年风云</span><span class="icon-zhengzaibofang iconfont"> 正在学习</span></li>
+                  </div>
+                  <h3 class="secondTilte">第二课</h3>
+                  <div style="height: auto;">
+                    <li><i class="icon-bofang iconfont"></i> <span>案例：硅谷百年风云</span><span
+                        class="icon-zhengzaibofang iconfont"> 正在学习</span></li>
+                  </div>
+                  <h3 class="secondTilte">第三课</h3>
+                  <div style="height: auto;">
+                    <li><i class="icon-bofang iconfont"></i> <span>案例：硅谷百年风云</span><span
+                        class="icon-zhengzaibofang iconfont"> 正在学习</span></li>
+
+                  </div>
+                  <h3 class="secondTilte">第四课</h3>
+                  <div style="height: auto;">
+                    <li><i class="icon-bofang iconfont"></i> <span>案例：硅谷百年风云</span><span
+                        class="icon-zhengzaibofang iconfont"> 正在学习</span></li>
+                  </div>
+                </div>
+              </div>
+              <h3 class="firstTilte">第二章</h3>
+              <div>
+                <div id="third">
+                  <h3 class="secondTilte">第一课</h3>
+                  <div style="height: auto;">
+                    <li><i class="icon-bofang iconfont"></i> <span>案例：硅谷百年风云</span><span
+                        class="icon-zhengzaibofang iconfont"> 正在学习</span></li>
+                  </div>
+                  <h3 class="secondTilte">第二课</h3>
+                  <div style="height: auto;">
+                    <li><i class="icon-bofang iconfont"></i> <span>案例：硅谷百年风云</span><span
+                        class="icon-zhengzaibofang iconfont"> 正在学习</span></li>
+                  </div>
+                  <h3 class="secondTilte">第三课</h3>
+                  <div style="height: auto;">
+                    <li><i class="icon-bofang iconfont"></i> <span>案例：硅谷百年风云</span><span
+                        class="icon-zhengzaibofang iconfont"> 正在学习</span></li>
+
+                  </div>
+                  <h3 class="secondTilte">第四课</h3>
+                  <div style="height: auto;">
+                    <li><i class="icon-bofang iconfont"></i> <span>案例：硅谷百年风云</span><span
+                        class="icon-zhengzaibofang iconfont"> 正在学习</span></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>
+<script src="./js/jq.js"></script>
+<script src="./js/jq-ui.js"></script>
+<script src="./js/video.min.js"></script>
+<script src="./js/flipclock/libs/prefixfree.min.js"></script>
+<script src="./js/flipclock/flipclock.min.js"></script>
+<script src="./js/classPhone.js"></script>
