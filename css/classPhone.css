@@ -196,6 +196,9 @@ body {
 #playPhoneBox main .currentBox .navBox .nowPlay .icon-zhengzaibofang {
   display: block !important;
 }
+#playPhoneBox main .currentBox .navBox .nowPlay li {
+  height: 6vh !important;
+}
 #playPhoneBox main .currentBox .navBox .icon-zhengzaibofang {
   float: right;
   display: none;

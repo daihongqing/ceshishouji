@@ -52,7 +52,8 @@ $(function () {
   }, function () {
     console.log('视频可以播放了', this);
   });
-
+  // 动态设置播放地址
+  // player.src(videoUrl)
   // ==>视频播放结束
   player.on("ended", function () {
     console.log("视频播放结束");
@@ -80,7 +81,7 @@ $(function () {
   var clock = $('.your-clock').FlipClock({
   });
   clock.setTime(0)
-  // clock.stop()
+  clock.stop()
 
   let $tabs = $('main .tab span')
   let $teachBox = $('.currentBox .desction')

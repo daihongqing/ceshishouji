@@ -66,6 +66,7 @@ body {
   width: 100px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 #classBox header .center .tabs .homePageBtn i,
 #classBox header .center .tabs .myClassBtn i {
@@ -99,8 +100,15 @@ body {
   position: absolute;
   display: none;
   top: 50px;
-  left: 0;
+  height: 30px;
+  left: 0px;
   background-color: #ccc;
+  line-height: 30px;
+  /* color: #fff; */
+  background: #fff;
+}
+#classBox header .center .user .xiala ul li {
+  color: #13264d;
 }
 #classBox main {
   width: 100%;

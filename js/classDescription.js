@@ -12,6 +12,15 @@ $(function () {
   clock.setTime(3600)
   clock.stop()
 
+  let $headTabs = $('header .tabs div')
+  $headTabs.on('click', function () {
+    if ($(this).index() == 0) {
+       window.location.href='www.baidu.com'
+    }
+    // console.log()
+    // $(this).addClass('tabCurrent').siblings().removeClass('tabCurrent');
+  });
+
 
   let $tabs = $('.selectBox .tab span')
   let $teachBox = $('.selectBox .teachBox')
