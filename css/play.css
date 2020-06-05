@@ -95,15 +95,13 @@ body {
   height: 40px;
   background: #dfe6f5;
 }
-#playBox main .nav .navBox #second .secondTilte,
-#playBox main .nav .navBox #third .secondTilte {
+#playBox main .nav .navBox #first .navCurrent > div .secondTilte {
   padding-left: 20px;
   box-sizing: border-box;
   color: #23468c;
   font-weight: 400;
 }
-#playBox main .nav .navBox #second li,
-#playBox main .nav .navBox #third li {
+#playBox main .nav .navBox #first .navCurrent > div li {
   display: flex;
   cursor: pointer;
   align-items: center;
@@ -111,13 +109,11 @@ body {
   padding-left: 45px;
   box-sizing: border-box;
 }
-#playBox main .nav .navBox #second li i,
-#playBox main .nav .navBox #third li i {
+#playBox main .nav .navBox #first .navCurrent > div li i {
   margin-right: 10px;
   color: #335a96;
 }
-#playBox main .nav .navBox #second li span,
-#playBox main .nav .navBox #third li span {
+#playBox main .nav .navBox #first .navCurrent > div li span {
   color: #335a96;
 }
 #playBox main .nav h3 {

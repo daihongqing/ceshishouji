@@ -11,6 +11,31 @@
   <link rel="stylesheet" href="../css/play.css">
   <title>课程播放页</title>
 </head>
+<script>
+  var os = function () {
+    var ua = navigator.userAgent,
+      isWindowsPhone = /(?:Windows Phone)/.test(ua),
+      isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+      isAndroid = /(?:Android)/.test(ua),
+      isFireFox = /(?:Firefox)/.test(ua),
+      isChrome = /(?:Chrome|CriOS)/.test(ua),
+      isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
+      isPhone = /(?:iPhone)/.test(ua) && !isTablet,
+      isPc = !isPhone && !isAndroid && !isSymbian;
+    return {
+      isTablet: isTablet,
+      isPhone: isPhone,
+      isAndroid: isAndroid,
+      isPc: isPc
+    };
+  }();
+
+  if (os.isAndroid || os.isPhone) {
+    window.location.href = 'classPhone.html'
+  } else if (os.isPc) {
+    console.log("电脑")
+  }
+</script>
 
 <body>
   <div id="playBox">
@@ -27,7 +52,7 @@
         <div class="navBox">
           <div id="first">
             <h3 class="firstTilte">第一章创业是什么</h3>
-            <div style="height: auto;">
+            <div class="navCurrent" style="height: auto;">
               <div id="second">
                 <h3 class="secondTilte">第一课</h3>
                 <div style="height: auto;">
@@ -49,7 +74,7 @@
               </div>
             </div>
             <h3 class="firstTilte">第二章</h3>
-            <div>
+            <div class="navCurrent" style="height: auto;">
               <div id="third">
                 <h3 class="secondTilte">第一课</h3>
                 <div style="height: auto;">

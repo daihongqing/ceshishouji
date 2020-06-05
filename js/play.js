@@ -1,4 +1,5 @@
 $(function () {
+  // 公用手风琴函数
   var icons = {
     header: "icon-jiahao iconfont",
     activeHeader: "icon-jianhao iconfont "
@@ -8,16 +9,17 @@ $(function () {
     icons: icons,
     heightStyle: "content"
   });
-  $("#second").accordion({
-    collapsible: true,
-    icons: icons,
-    heightStyle: "content"
+  let navBox = $('#first .navCurrent').children().each(function (indexInArray, valueOfElement) {
+    if (valueOfElement) {
+      $(`#${valueOfElement.id}`).accordion({
+        collapsible: true,
+        icons: icons,
+        heightStyle: "content"
+      });
+    }
   });
-  $("#third").accordion({
-    collapsible: true,
-    icons: icons,
-    heightStyle: "content"
-  });
+
+  //  videojs
   var player = new videojs(document.getElementById('myVideo'), {
     autoplay: true,// 自动播放：true/false
     controls: true, // 是否显示底部控制栏：true/false
@@ -51,17 +53,27 @@ $(function () {
   }, function () {
     console.log('视频可以播放了', this);
   });
-  // //播放器初始化操作面板清晰度菜单
-  function playerInitVideo() {
-    var myButton = player.controlBar.addChild('button', {
-      text: "清晰度",
-      // other options
-    });
 
-    myButton.addClass("html-classname");
-  }
-  playerInitVideo()
+  // ==>视频播放结束
+  player.on("ended", function () {
+    console.log("视频播放结束");
+  })
 
+  // ==>点击暂停的时候
+  player.on("pause", function () {
+    console.log("点击暂停");
+  })
 
+  // ==>视频播放中(持续发送)
+  player.on("timeupdate", function () {
+    // $.ajax({
+    //   type: "method",
+    //   url: "url",
+    //   data: "data",
+    //   dataType: "dataType",
+    //   success: function (response) {
 
+    //   }
+    // });
+  })
 });

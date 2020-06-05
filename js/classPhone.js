@@ -1,4 +1,5 @@
 $(function () {
+  
   var icons = {
     header: "icon-jiahao iconfont",
     activeHeader: "icon-jianhao iconfont "
@@ -8,17 +9,16 @@ $(function () {
     icons: icons,
     heightStyle: "content"
   });
-  $("#second").accordion({
-    collapsible: true,
-    icons: icons,
-    heightStyle: "content"
+  let navBox = $('#first .navCurrent').children().each(function (indexInArray, valueOfElement) {
+    if (valueOfElement) {
+      $(`#${valueOfElement.id}`).accordion({
+        collapsible: true,
+        icons: icons,
+        heightStyle: "content"
+      });
+    }
   });
-  $("#third").accordion({
-    collapsible: true,
-    icons: icons,
-    heightStyle: "content"
-  });
-
+  // video
   var player = new videojs(document.getElementById('myVideo'), {
     autoplay: true,// 自动播放：true/false
     controls: true, // 是否显示底部控制栏：true/false
@@ -53,6 +53,30 @@ $(function () {
     console.log('视频可以播放了', this);
   });
 
+  // ==>视频播放结束
+  player.on("ended", function () {
+    console.log("视频播放结束");
+  })
+
+  // ==>点击暂停的时候
+  player.on("pause", function () {
+    console.log("点击暂停");
+  })
+
+  // ==>视频播放中(持续发送)
+  player.on("timeupdate", function () {
+    // $.ajax({
+    //   type: "method",
+    //   url: "url",
+    //   data: "data",
+    //   dataType: "dataType",
+    //   success: function (response) {
+
+    //   }
+    // });
+  })
+
+  // 时间插件
   var clock = $('.your-clock').FlipClock({
   });
   clock.setTime(0)
@@ -64,4 +88,7 @@ $(function () {
     $(this).addClass('current').siblings().removeClass('current');
     $teachBox.eq([$(this).index()]).addClass('show').siblings().removeClass('show');
   });
+
+
+
 });

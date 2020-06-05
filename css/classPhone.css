@@ -123,7 +123,7 @@ body {
 }
 #playPhoneBox main .currentBox .desction .user img {
   width: 15vw;
-  height: auto;
+  height: 7vh;
   border-radius: 50%;
   margin-right: 3vw;
 }
@@ -166,16 +166,7 @@ body {
   align-items: center;
   border-bottom: 1px solid #c2d0ee;
 }
-#playPhoneBox main .currentBox .navBox .nowPlay .icon-zhengzaibofang {
-  display: block !important;
-}
-#playPhoneBox main .currentBox .navBox .icon-zhengzaibofang {
-  float: right;
-  display: none;
-  margin-left: 19vw;
-}
-#playPhoneBox main .currentBox .navBox #second .secondTilte,
-#playPhoneBox main .currentBox .navBox #third .secondTilte {
+#playPhoneBox main .currentBox .navBox #first .navCurrent > div .secondTilte {
   padding-left: 7vw;
   padding-right: 7vw;
   display: flex;
@@ -187,8 +178,7 @@ body {
   color: #23468c;
   font-weight: 400;
 }
-#playPhoneBox main .currentBox .navBox #second li,
-#playPhoneBox main .currentBox .navBox #third li {
+#playPhoneBox main .currentBox .navBox #first .navCurrent > div li {
   display: flex;
   cursor: pointer;
   align-items: center;
@@ -196,12 +186,18 @@ body {
   padding-left: 45px;
   box-sizing: border-box;
 }
-#playPhoneBox main .currentBox .navBox #second li i,
-#playPhoneBox main .currentBox .navBox #third li i {
+#playPhoneBox main .currentBox .navBox #first .navCurrent > div li i {
   margin-right: 10px;
   color: #335a96;
 }
-#playPhoneBox main .currentBox .navBox #second li span,
-#playPhoneBox main .currentBox .navBox #third li span {
+#playPhoneBox main .currentBox .navBox #first .navCurrent > div li span {
   color: #335a96;
+}
+#playPhoneBox main .currentBox .navBox .nowPlay .icon-zhengzaibofang {
+  display: block !important;
+}
+#playPhoneBox main .currentBox .navBox .icon-zhengzaibofang {
+  float: right;
+  display: none;
+  margin-left: 19vw;
 }
